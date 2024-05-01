@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Volt</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ici, tu devras créer un fichier nommé styles.css et y copier ton code CSS -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site de Volt</h1>
+        <!-- Ici, tu peux ajouter des éléments de navigation comme des liens vers différentes pages de ton site -->
+    </header>
+
+    <main>
+        <section>
+            <h2>À propos de Volt</h2>
+            <p>Ici, tu peux ajouter une description de ton parti politique Volt et ses valeurs.</p>
+        </section>
+
+        <section>
+            <h2>Test politique</h2>
+            <!-- Ici, tu peux copier-coller le code de ton test politique en ligne -->
+            <!-- Si tu utilises Google Forms, tu dois intégrer le formulaire en copiant le code fourni par Google -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Volt. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Politique - Parti Volt</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assure-toi d'avoir un fichier styles.css pour le style du test -->
+</head>
+<body>
+    <header>
+        <h1>Test Politique - Parti Volt</h1>
+    </header>
+
+    <main>
+        <section id="politicalTest">
+            <h2>Question 1 : Les personnes qui ont une grosse fortune doivent-elles payer plus d’impôts ?</h2>
+            <label>
+                <input type="radio" name="q1" value="pour"> Pour
+            </label>
+            <label>
+                <input type="radio" name="q1" value="neutre"> Neutre
+            </label>
+            <label>
+                <input type="radio" name="q1" value="contre"> Contre
+            </label>
+
+            <h2>Question 2 : La Belgique doit-elle se retirer de l'OTAN ?</h2>
+            <label>
+                <input type="radio" name="q2" value="pour"> Pour
+            </label>
+            <label>
+                <input type="radio" name="q2" value="neutre"> Neutre
+            </label>
+            <label>
+                <input type="radio" name="q2" value="contre"> Contre
+            </label>
+
+            <h2>Question 3 : Le prochain gouvernement doit-il décider de construire une nouvelle centrale nucléaire ?</h2>
+            <label>
+                <input type="radio" name="q3" value="pour"> Pour
+            </label>
+            <label>
+                <input type="radio" name="q3" value="neutre"> Neutre
+            </label>
+            <label>
+                <input type="radio" name="q3" value="contre"> Contre
+            </label>
+
+            <!-- Ajoute les autres questions de la même manière -->
+
+            <button type="button" onclick="submitTest()">Soumettre le test</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Parti Volt. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        function submitTest() {
+            // Récupère toutes les réponses du formulaire
+            var answers = {};
+            var questions = document.querySelectorAll('input[type="radio"]');
+            questions.forEach(function(question) {
+                if (question.checked) {
+                    answers[question.name] = question.value;
+                }
+            });
+
+            // Envoie les réponses à une page de traitement ou affiche-les directement
+            console.log(answers); // Utilise console.log pour afficher les réponses dans la console du navigateur
+            // Ici, tu peux ajouter du code pour envoyer les réponses à un serveur ou les afficher directement sur la page
+        }
+    </script>
+</body>
+</html>
